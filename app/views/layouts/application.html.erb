@@ -6,9 +6,18 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
   </head>
 
   <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="header">
+          <h2><%= link_to 'Wikinimous', articles_path%></h2>
+          <h3><%= link_to 'New article', new_article_path%></h3>
+        </div>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>
